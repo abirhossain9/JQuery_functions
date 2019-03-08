@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--CSS Links -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>JQuery Functions</title>
+  </head>
+  <body>
+    <section class="idSelectors">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center div1">
+            <p>JQuery Function practice</p>
+            <button id="id_s" class="btn btn-success">Select Id</button>
+            <button class="btn btn-danger cl_s">Select class</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="Show_hide">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            
+            <div class="div1">
+              <p>Show,Hide and toggle</p>
+              <button class="btn btn-danger cl_show">Show</button>
+              <button class="btn btn-danger cl_hide">Hide</button>
+              <button class="btn btn-danger cl_toggle">Toggle</button>
+              <p class="sh">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, rerum.</p>
+            </div>
+            <div class="div1">
+              <p>Show hide with timer</p>
+              <button class="btn btn-danger cl_show_t">Show</button>
+              <button class="btn btn-danger cl_hide_t">Hide</button>
+              
+              <p class="sh_t">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, rerum.</p>
+            </div>
+            <!-- fade -->
+            <div class="div1">
+              <p>fade functions</p>
+              <button class="btn btn-danger cl_fin">Fade In</button>
+              <button class="btn btn-danger cl_fout">Fade out</button>
+              <button class="btn btn-danger cl_ftoggle">Toggle</button>
+              <button class="btn btn-danger cl_fto">FadeTo</button>
+              
+              <p class="sh_f">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, rerum.</p>
+            </div>
+            <div class="div2">
+              <p>Slide toggle</p>
+              <button class="btn btn-block btn-danger cl_slt">Slide Toggle</button>
+              <p class="slt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate possimus eaque praesentium mollitia. Distinctio nesciunt beatae atque iste tenetur unde.</p>
+            </div>
+            <div class="div3">
+              <p class="fa">Practicing **This**</p>
+              <p class="fa">Lorem ipsum dolor sit amet.</p>
+              <p class="fa">Lorem ipsum dolor sit amet.</p>
+              <p class="fa">Lorem ipsum dolor sit amet.</p>
+              <p class="fa">Lorem ipsum dolor sit amet.</p>
+              <p class="fa">Lorem ipsum dolor sit amet.</p>
+              <p class="fa">Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="div4">
+              <p>Add Class Practice</p>
+              <p>Click On any of the word bellow to change its class </p>
+              <ul class="list-unstyled">
+                <li class="fLi">Nsu</li>
+                <li>Brac</li>
+                <li>Buet</li>
+                <li>Du</li>
+                <li>Kuet</li>
+                <li>Chuet</li>
+                <li>Ruet</li>
+              </ul>
+            </div>
+            <div class="div4">
+              <p>Select by header example</p>
+              <h1>Click to fade</h1>
+              <h1>Lorem ipsum dolor.</h1>
+              <h1>Lorem ipsum dolor.</h1>
+              <h1>Lorem ipsum dolor.</h1>
+              <h1>Lorem ipsum dolor.</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- jQuery links-->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+
+
+    <script>
+    $(document).ready(function(){
+    $("#id_s").click(function()
+    {
+    alert("this is an example of id selector");
+    });
+    $(".cl_s").click(function()
+    {
+    alert("this is an example of class selector");
+    });
+    // show hide
+    $(".cl_show").click(function()
+    {
+    $(".sh").show();
+    });
+    $(".cl_hide").click(function()
+    {
+    $(".sh").hide();
+    });
+    $(".cl_toggle").click(function()
+    {
+    $(".sh").toggle();
+    });
+    //show hide with timer
+    $(".cl_show_t").click(function()
+    {
+    $(".sh_t").show(2000);
+    });
+    $(".cl_hide_t").click(function()
+    {
+    $(".sh_t").hide("slow");
+    });
+    // fade functions
+    $(".cl_fout").click(function()
+    {
+    $(".sh_f").fadeOut("slow");
+    });
+    $(".cl_fin").click(function()
+    {
+    $(".sh_f").fadeIn("slow");
+    });
+    $(".cl_ftoggle").click(function()
+    {
+    $(".sh_f").fadeToggle("slow");
+    });
+    $(".cl_fto").click(function()
+    {
+    $(".sh_f").fadeTo(1000,.5);
+    });
+    // slide up slide down
+    $(".cl_slt").click(function(){
+    $(".slt").slideToggle();
+    });
+    // this
+    $(".fa").click(function(){
+    $(this).hide("fast");
+    });
+    // add class
+    $("li:odd").click(function(){
+    $("li:odd").addClass("odd");
+    });
+    $("li:even").click(function(){
+    $("li:even").addClass("even");
+    });
+    
+    $(".fLi").click(function(){
+    $(".fLi").addClass("first");
+    });
+    $(":header").click(function(){
+    $(":header").fadeOut("slow");
+    });
+    });
+    </script>
+
+    
+  </body>
+</html>

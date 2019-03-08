@@ -1,0 +1,57 @@
+body
+{
+	background-color:#1EC0FF;
+}
+.slt
+{
+	display: none;
+	border: 1px dotted red;
+}
+p
+{
+	font-size: 24px;
+}
+.odd
+{
+	text-transform: uppercase;
+	font-size: 30px;
+	color: white;
+	border: 1px solid black;
+	padding-top: 10px;
+	background-color: green;
+}
+
+.even
+{
+	text-transform: uppercase;
+	font-size: 30px;
+	color: tomato;
+	border: 1px solid black;
+	padding-bottom: 10px;
+}
+.first
+{
+	background-color: yellow;
+
+}
+.div4
+{
+	border: 1px solid;
+	margin-bottom: 20px;
+}
+.div3
+{
+	border: 1px solid;
+	margin-bottom: 20px;
+}
+.div1 
+{
+	border: 1px solid;
+	margin-bottom: 20px;
+
+}
+.div2
+{
+	border: 1px solid;
+	margin-bottom: 20px;
+}
